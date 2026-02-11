@@ -13,4 +13,8 @@
       <ProjectReference Include="..\src\Api\Api.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Aspire.Hosting.MongoDB" Version="13.1.0" />
+    </ItemGroup>
+
 </Project>
