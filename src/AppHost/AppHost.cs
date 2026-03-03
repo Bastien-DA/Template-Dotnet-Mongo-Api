@@ -1,7 +1,11 @@
 var builder = DistributedApplication.CreateBuilder(args);
 
-var mongo = builder.AddMongoDB("mongo")
-    .WithVolume("mongoDb");
+var username = builder.AddParameter("username");
+var password = builder.AddParameter("password", secret: true);
+
+var mongo = builder.AddMongoDB("mongo", 27017, username, password)
+    .WithLifetime(ContainerLifetime.Persistent)
+    .WithDataVolume();
 
 var mongodb = mongo.AddDatabase("mongodb");
 

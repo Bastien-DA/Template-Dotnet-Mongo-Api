@@ -10,11 +10,13 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\src\Api\Api.csproj" />
+      <ProjectReference Include="..\Api\Api.csproj" />
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="Aspire.Hosting.MongoDB" Version="13.1.0" />
+      <PackageReference Include="Aspire.Hosting.AppHost" Version="13.1.2" />
+      <PackageReference Include="Aspire.Hosting.MongoDB" Version="13.1.2" />
+      <PackageReference Include="Aspire.MongoDB.Driver" Version="13.1.2" />
     </ItemGroup>
 
 </Project>
