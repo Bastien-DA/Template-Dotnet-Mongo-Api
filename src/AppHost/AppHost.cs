@@ -1,5 +1,6 @@
 var builder = DistributedApplication.CreateBuilder(args);
 
+builder.AddDockerComposeEnvironment("aspire-template-mongo-api");
 var username = builder.AddParameter("username");
 var password = builder.AddParameter("password", secret: true);
 
