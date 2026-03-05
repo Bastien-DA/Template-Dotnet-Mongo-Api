@@ -7,5 +7,6 @@
         <NoDefaultLaunchSettingsFile>True</NoDefaultLaunchSettingsFile>
         <RootNamespace>Infrastructure</RootNamespace>
     </PropertyGroup>
+    
 
 </Project>
