@@ -48,7 +48,7 @@ jobs:
         run: >
           dotnet sonarscanner begin 
           /k:"Template-Dotnet-Mongo-Api" 
-          /o:"Bastien-DA" 
+          /o:"${{ secrets.SONAR_ORGANIZATION_KEY }}"  
           /d:sonar.host.url="https://sonarcloud.io" 
           /d:sonar.token="${{ secrets.SONAR_TOKEN }}" 
           /d:sonar.cs.opencover.reportsPaths="**/coverage.opencover.xml"
