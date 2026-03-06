@@ -47,7 +47,7 @@ jobs:
         # Note : Le \ permet de sauter des lignes pour que ce soit plus lisible pour toi
         run: >
           dotnet sonarscanner begin 
-          /k:"Template-Dotnet-Mongo-Api" 
+          /k:"Bastien-DA_Template-Dotnet-Mongo-Api" 
           /o:"${{ secrets.SONAR_ORGANIZATION_KEY }}"  
           /d:sonar.host.url="https://sonarcloud.io" 
           /d:sonar.token="${{ secrets.SONAR_TOKEN }}" 
