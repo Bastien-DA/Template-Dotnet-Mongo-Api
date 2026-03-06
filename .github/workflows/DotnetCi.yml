@@ -52,6 +52,7 @@ jobs:
           /d:sonar.host.url="https://sonarcloud.io" 
           /d:sonar.token="${{ secrets.SONAR_TOKEN }}" 
           /d:sonar.cs.opencover.reportsPaths="**/coverage.opencover.xml"
+          /d:sonar.qualitygate.wait=true
 
       - name: 🏗️ Compilation (Build)
         run: dotnet build --no-restore --configuration Release
