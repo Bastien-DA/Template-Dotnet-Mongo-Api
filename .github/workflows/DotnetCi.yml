@@ -47,8 +47,8 @@ jobs:
         # Note : Le \ permet de sauter des lignes pour que ce soit plus lisible pour toi
         run: >
           dotnet sonarscanner begin 
-          /k:"NOM_DE_TON_PROJET_SUR_SONARCLOUD" 
-          /o:"NOM_DE_TON_ORGANISATION" 
+          /k:"Template-Dotnet-Mongo-Api" 
+          /o:"Bastien-DA" 
           /d:sonar.host.url="https://sonarcloud.io" 
           /d:sonar.token="${{ secrets.SONAR_TOKEN }}" 
           /d:sonar.cs.opencover.reportsPaths="**/coverage.opencover.xml"
