@@ -30,8 +30,8 @@ jobs:
           java-version: '17'
           distribution: 'zulu'
 
-      # - name: 🔍 Installation globale de SonarScanner pour .NET
-      #   run: dotnet tool install --global dotnet-sonarscanner
+      - name: 🔍 Installation globale de SonarScanner pour .NET
+        run: dotnet tool install --global dotnet-sonarscanner
 
       - name: 📦 Restauration des dépendances
         run: dotnet restore
