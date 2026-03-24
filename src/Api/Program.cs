@@ -1,4 +1,5 @@
 using Scalar.AspNetCore;
+using TemplateDotnetMongoApi.ServiceDefaults;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,6 +15,8 @@ builder.Services.AddOpenApi();
 // Use the MongoDB client configuration from the apphost configuration
 builder.AddMongoDBClient(connectionName: "mongodb");
 
+builder.Services.AddProblemDetails();
+
 var app = builder.Build();
 
 app.MapDefaultEndpoints();
@@ -24,6 +27,8 @@ if (app.Environment.IsDevelopment())
     app.MapOpenApi();
     app.MapScalarApiReference();
 }
+
+app.UseExceptionHandler();
 
 app.UseHttpsRedirection();
 

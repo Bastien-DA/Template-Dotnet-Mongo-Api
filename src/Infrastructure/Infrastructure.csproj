@@ -8,5 +8,7 @@
         <RootNamespace>Infrastructure</RootNamespace>
     </PropertyGroup>
     
-
+    <ItemGroup>
+        <PackageReference Include="Aspire.MongoDB.Driver" Version="13.1.2" />
+    </ItemGroup>
 </Project>
