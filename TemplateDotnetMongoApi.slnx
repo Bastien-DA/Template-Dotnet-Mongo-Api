@@ -1,10 +1,15 @@
 <Solution>
-  <Project Path="src/Infrastructure/Infrastructure.csproj" />
-  <Project Path="src/Api/Api.csproj" />
-  <Project Path="src/Domain/Domain.csproj" />
-  <Project Path="src/AppHost/AppHost.csproj" />
-  <Project Path="src/ServiceDefaults/ServiceDefaults.csproj" />
-  <Project Path="test/unit/Api.Tests/Api.Tests.csproj" />
-  <Project Path="test/unit/Domain.Tests/Domain.Tests.csproj" />
-  <Project Path="test/unit/Infrastructure.Tests/Infrastructure.Tests.csproj" />
+  <Folder Name="/src/">
+    <Project Path="src/Infrastructure/Infrastructure.csproj" />
+    <Project Path="src/Api/Api.csproj" />
+    <Project Path="src/Domain/Domain.csproj" />
+    <Project Path="src/AppHost/AppHost.csproj" />
+    <Project Path="src/ServiceDefaults/ServiceDefaults.csproj" />
+  </Folder>
+
+  <Folder Name="/test/unit/">
+    <Project Path="test/unit/Api.Tests/Api.Tests.csproj" />
+    <Project Path="test/unit/Domain.Tests/Domain.Tests.csproj" />
+    <Project Path="test/unit/Infrastructure.Tests/Infrastructure.Tests.csproj" />
+  </Folder>
 </Solution>
