@@ -8,6 +8,7 @@
   </Folder>
 
   <Folder Name="/test/unit/">
+    <File Path="test/unit/Directory.Build.props" />
     <Project Path="test/unit/Api.Tests/Api.Tests.csproj" />
     <Project Path="test/unit/Domain.Tests/Domain.Tests.csproj" />
     <Project Path="test/unit/Infrastructure.Tests/Infrastructure.Tests.csproj" />
