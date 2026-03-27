@@ -13,7 +13,7 @@ jobs:
 
     steps:
       - name: 🛎️ Checkout du code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         # 💡 Tip de pro : Sonar a besoin de tout l'historique Git pour assigner la dette technique au bon développeur (git blame).
         # Il faudra décommenter ces lignes pour désactiver le shallow clone.
         with:
