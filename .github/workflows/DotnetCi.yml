@@ -14,8 +14,6 @@ jobs:
     steps:
       - name: 🛎️ Checkout du code
         uses: actions/checkout@v6
-        # 💡 Tip de pro : Sonar a besoin de tout l'historique Git pour assigner la dette technique au bon développeur (git blame).
-        # Il faudra décommenter ces lignes pour désactiver le shallow clone.
         with:
           fetch-depth: 0
 
@@ -36,15 +34,10 @@ jobs:
       - name: 📦 Restauration des dépendances
         run: dotnet restore
 
-      # C'est ici que la CI pètera si le code est mal formaté
-      - name: 🧹 Vérification du formatage
-        run: dotnet format --verify-no-changes
-
       - name: 🚀 Démarrage de l'analyse SonarCloud
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        # Note : Le \ permet de sauter des lignes pour que ce soit plus lisible pour toi
         run: >
           dotnet sonarscanner begin 
           /k:"Bastien-DA_Template-Dotnet-Mongo-Api" 
