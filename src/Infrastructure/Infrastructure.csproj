@@ -9,6 +9,6 @@
     </PropertyGroup>
     
     <ItemGroup>
-        <PackageReference Include="Aspire.MongoDB.Driver" Version="13.2.0" />
+        <PackageReference Include="Aspire.MongoDB.Driver" Version="13.2.2" />
     </ItemGroup>
 </Project>
